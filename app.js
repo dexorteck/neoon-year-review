@@ -6,7 +6,8 @@ const miniGolfCards=[['assets/frente_cartao.png','Mini Golf · Frente'],['assets
 miniGolfCards.forEach(([src,label],i)=>{designsSection.querySelector('.design-grid').insertAdjacentHTML('beforeend',`<button class="design-piece" data-image="${src}" aria-label="Ampliar ${label}"><div class="design-image"><img src="${src}" alt="${label}" loading="lazy"></div><span>${14+i}<b>${label}</b><span aria-hidden="true">↗</span></span></button>`)});
 designsSection.querySelector('.section-top span:last-child').textContent='15 PEÇAS · NEOON SPACE';
 ['1','2','3','5'].forEach((name,i)=>{const src=`assets/designs/loyalty-${name}.png`;const label=`Loyalty card design ${i+1}`;designsSection.querySelector('.design-grid').insertAdjacentHTML('beforeend',`<button class="design-piece" data-image="${src}" aria-label="Enlarge ${label}"><div class="design-image"><img src="${src}" alt="${label} created for Neoon Space" loading="lazy"></div><span>${16+i}<b>${label}</b><span aria-hidden="true">↗</span></span></button>`)});
-designsSection.querySelector('.section-top span:last-child').textContent='19 DESIGNS · NEOON SPACE';
+designsSection.querySelector('.design-grid').insertAdjacentHTML('beforeend','<button class="design-piece" data-image="assets/designs/design.png" aria-label="Enlarge Neoon Space design"><div class="design-image"><img src="assets/designs/design.png" alt="Design created for Neoon Space" loading="lazy"></div><span>20<b>Design</b><span aria-hidden="true">↗</span></span></button>');
+designsSection.querySelector('.section-top span:last-child').textContent='20 DESIGNS · NEOON SPACE';
 document.querySelector('.activation .cards')?.remove();
 document.querySelector('.activation')?.classList.add('reviews-only');
 document.querySelector('#inicio')?.remove();
